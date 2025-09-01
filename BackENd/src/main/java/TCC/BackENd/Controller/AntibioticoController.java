@@ -47,7 +47,7 @@ public class AntibioticoController {
         return ant.findByGram_pos(g);
     }
 
-    @GetMapping(value = "/AntibioticosMorfologia/{m}")
+    @GetMapping(value = "/AntibioticosMorfologia/{g}")
     public List<Antibiotico> listaPorMorfoloogia(@PathVariable(value="g")int g)
     {
         return ant.findByMorfologia(g);
