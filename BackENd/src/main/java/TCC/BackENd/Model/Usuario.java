@@ -10,7 +10,7 @@ public class Usuario {
     }
 
     public String getNome() {
-        return nome;
+        return username;
     }
 
     public String getSenha() {
@@ -34,7 +34,7 @@ public class Usuario {
     private int id;
 
     @Column(nullable = false,name= "username")
-    private String nome;
+    private String username;
 
     @Column(nullable = false,name="senha")
     private String senha;
@@ -53,7 +53,7 @@ public class Usuario {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.username = nome;
     }
 
     public void setSenha(String senha) {
